@@ -3,6 +3,10 @@ const validator = {
     required: true,
     message: 'Required',
   },
+  numbers: {
+    pattern: /^[0-9]+$/,
+    message: 'Only numbers',
+  },
   maxlength4: {
     len: 4,
     message: 'Must be 4 characters',

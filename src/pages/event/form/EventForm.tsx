@@ -20,7 +20,7 @@ const EventForm = (props: IProps) => {
         <Input placeholder="Event Name" />
       </Form.Item>
 
-      <Form.Item name="price">
+      <Form.Item name="price" rules={[validator.numbers]}>
         <Input placeholder="Event Price" />
       </Form.Item>
 
